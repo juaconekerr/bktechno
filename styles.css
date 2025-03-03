@@ -1,0 +1,213 @@
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header y navegación */
+header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 1.5rem;
+}
+
+nav a {
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Hero section */
+#hero {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #004085;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.hero-image img {
+  max-width: 400px;
+}
+
+/* Servicios section */
+#servicios, #marcas, #contacto {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#servicios h2, #marcas h2, #contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #004085;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.servicio-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-card img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+/* Marcas section */
+.marcas-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.marcas-grid img {
+  max-height: 80px;
+    transition: filter 0.3s ease;
+  }
+  /* ... (resto de tus estilos CSS) ... */
+
+#contacto {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #004085;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Aumenta el espacio entre los grupos de elementos */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 1.2rem; /* Aumenta el padding para mayor comodidad */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Bordes redondeados */
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #007bff; /* Cambia el color del borde al enfocar */
+  outline: none; /* Elimina el borde predeterminado al enfocar */
+}
+
+#contact-form button {
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Bordes redondeados para el botón */
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+} 
+header {
+  transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.header-oculto {
+  transform: translateY(-100%); /* Oculta el header moviéndolo hacia arriba */
+}
