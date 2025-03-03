@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbloqueo Express - Tu Servicio de Desbloqueo de Celulares</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="miHeader">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logosinfondo.png" alt="Desbloqueo Express Logo">
+                </a>
+                <h1>BK Techno</h1>
+            </div>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Desbloquea tu Celular al Instante</h2>
+            <p>Todas las marcas, todos los modelos. ¡Rápido, seguro y confiable!</p>
+            <a href="#contacto" class="btn">¡Desbloquea Ahora!</a>
+        </div>
+        <div class="hero-image">
+            <img src="img/iphonehello.png" alt="Celular Desbloqueado">
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="img/software.png" alt="Desbloqueo por Software">
+                <h3>Desbloqueo por Software</h3>
+                <p>Desbloqueamos tu celular utilizando software especializado. ¡Rápido y seguro!</p>
+            </div>
+            <div class="servicio-card">
+                <img src="img/imei.png" alt="Desbloqueo por IMEI">
+                <h3>Desbloqueo por IMEI</h3>
+                <p>Desbloqueo permanente utilizando el código IMEI de tu celular.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="marcas">
+        <h2>Marcas que Desbloqueamos</h2>
+        <div class="marcas-grid">
+            <img src="img/apple.png" alt="Apple">
+            <img src="img/samsung.png" alt="Samsung">
+            <img src="img/huawei.png" alt="Huawei">
+            <img src="img/xiaomi.png" alt="Xiaomi">
+            <img src="img/motorola.png" alt="Motorola">
+            <img src="img/lg.png" alt="LG">
+        </div>
+    </section>
+
+    <section id="contacto">
+      <h2>¡Contáctanos!</h2>
+      <form id="contact-form">
+          <div class="form-group">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+              <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+          </div>
+          <button type="submit">Enviar Mensaje</button>
+          <p id="mensaje-confirmacion" style="display: none; color: green; margin-top: 10px;">
+              ¡Gracias! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo a la brevedad.
+          </p>
+      </form>
+  </section>
+
+    <footer>
+        <p>&copy; 2024 BK Techno. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
